@@ -1,22 +1,43 @@
-// Copyright (c) 2025 Adrina. peighambarzadeh All rights reserved
+// Copyright (c) 2025 Adrina peighambarzadeh All rights reserved
+
 //
-// Created by: Adrina. peighambarzadeh
-// Created on: mar 2025
+
+// Created by: Adrina peighambarzadeh
+
+// Created on: Mar 2025
+
 // This file contains the JS functions for index.html
 
 "use strict"
 
 /**
- * This function calculates area of a triangle.
- */
+
+* This function calculates the area of a triangle.
+
+*/
+
 function calculateAreaOfTriangle() {
   // input
-  const baseOfTriangle = parseFloat(document.getElementById('base-of-triangle').value)
-  const heightOfTriangle = parseFloat(document.getElementById('height-of-triangle').value)
+
+  const aBaseOfTrapezoid = parseFloat(
+    document.getElementById("a-base-of-trapezoid").value
+  )
+
+  const bBaseOfTrapezoid = parseFloat(
+    document.getElementById("b-base-of-trapezoid").value
+  )
+
+  const heightOfTrapezoid = parseFloat(
+    document.getElementById("height-of-trapezoid").value
+  )
 
   // process
-  const areaOfTriangle = (1 / 2) * baseOfTriangle * heightOfTriangle
+
+  const areaOfTrapezoid =
+    ((aBaseOfTrapezoid + bBaseOfTrapezoid) / 2) * heightOfTrapezoid
 
   // output
-  document.getElementById('area').innerHTML = 'Area is: ' + areaOfTriangle.toFixed(2) + ' cm²'
+
+  document.getElementById("answer").innerHTML =
+    "Area of your Trapezoid is: " + areaOfTrapezoid + " mm²"
 }
