@@ -10,12 +10,11 @@
 
 "use strict"
 
-/**
-
-
+/*
+=======
 * This function calculates the area of a triangle.
 
-
+>>>>>>> 5ef98f5df06fc2b81e39abae1e6bb3c517c6fc69
 */
 
 function calculateAreaOfTriangle() {
